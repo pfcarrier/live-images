@@ -7,3 +7,20 @@ task-print-server
 
 #gstreamer-vaapi
 i965-va-driver
+cryptsetup
+terminator
+google-chrome-stable
+thunar
+git
+subversion
+keychain
+vim
+tree
+dstat
+dnsutils
+vagrant
+virtualbox
+lxc
+firmware-linux
+firmware-linux-nonfree
+chef
