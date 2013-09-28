@@ -10,6 +10,6 @@ umount /dev/mapper/my_persistence
 
 cryptsetup luksClose /dev/mapper/my_persistence
 
-# Consult the cryptsetup header to know the selected cipher/hashing method
+# Consult the Luks header to know the selected cipher/hashing method
 # cryptsetup luksDump /dev/sdc2
 
