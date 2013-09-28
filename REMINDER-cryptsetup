@@ -1,0 +1,13 @@
+cryptsetup --verbose --verify-passphrase luksFormat /dev/sdc2
+cryptsetup luksOpen /dev/sdc2 my_persistence 
+mkfs.ext4 -L persistence /dev/mapper/my_persistence
+
+mkdir -p /mnt/my_persistence
+mount /dev/mapper/my_persistence /mnt/my_persistence/
+echo "/ union" > /mnt/my_persistence/persistence.conf
+sync
+umount /dev/mapper/my_persistence
+
+cryptsetup luksClose /dev/mapper/my_persistence
+
+
