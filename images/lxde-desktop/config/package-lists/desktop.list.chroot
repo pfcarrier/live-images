@@ -26,3 +26,5 @@ firmware-linux
 firmware-linux-nonfree
 chef
 virtualbox-guest-additions-iso
+ssh-askpass-fullscreen
+xscreensaver-data-extra
