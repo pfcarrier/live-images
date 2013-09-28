@@ -25,3 +25,4 @@ lxc
 firmware-linux
 firmware-linux-nonfree
 chef
+virtualbox-guest-additions-iso
