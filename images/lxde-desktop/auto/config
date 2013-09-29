@@ -16,6 +16,7 @@ esac
 
 lb config noauto \
         -a amd64 \
+        -d wheezy \
 	--clean \
 	--ignore-system-defaults \
 	--mode debian \
@@ -29,7 +30,21 @@ boot=live \
 config \
 persistence \
 persistence-encryption=luks,none \
+persistent=cryptsetup \
 quickreboot \
 username=pcarrier \
 hostname=shoe" \
 "${@}"
+
+
+# todo:
+#
+# (boot param) live-config.locales=it_IT live-config.timezone=Europe/Rome live-config.keyboard-layouts=it \
+# --apt-recommends true \
+# --linux-packages linux-image-3.7-trunk \
+#  mirror="http://ftp.debian.org/debian/";  
+#   security_mirror="http://ftp.debian.org/debian-security/"; 
+#   --mirror-bootstrap "${mirror}" \
+#   --mirror-binary "${mirror}" \
+#   --mirror-chroot-security "${security_mirror}" \
+#   --mirror-binary-security "${security_mirror}" \
