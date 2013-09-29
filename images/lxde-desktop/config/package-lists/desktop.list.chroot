@@ -28,3 +28,4 @@ chef
 virtualbox-guest-additions-iso
 ssh-askpass-fullscreen
 xscreensaver-data-extra
+vim-gtk
